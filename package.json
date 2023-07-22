@@ -1,0 +1,23 @@
+{
+  "name": "nosqlbckend",
+  "version": "1.0.0",
+  "description": "Simple backend for a social network.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Will-Riffe/congenial-journey.git"
+  },
+  "author": "Will Riffe",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/Will-Riffe/congenial-journey/issues"
+  },
+  "homepage": "https://github.com/Will-Riffe/congenial-journey#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^7.4.0"
+  }
+}
