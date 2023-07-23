@@ -5,7 +5,7 @@ const dateFormat = require('../utils/dateUtil');
 
 
 /* 
-    schema for our reactions
+    schema for our thoughts
 */
 const thoughts = new Schema(
   {

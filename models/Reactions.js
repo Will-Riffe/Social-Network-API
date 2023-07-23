@@ -17,7 +17,7 @@ const Reactions = new Schema(
     reactionBody: {
       type: String,
       required: true,
-      maxlength: 250
+      maxlength: 311
     },
     // contains name of the reactions user/owner
     username: {
@@ -36,7 +36,7 @@ const Reactions = new Schema(
     toJSON: {
       getters: true
     },
-    id: false // isabled because we use reactionId...
+    id: false // disabled because we use reactionId...
   }
 );
 
