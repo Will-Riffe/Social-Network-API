@@ -6,7 +6,7 @@ const dateFormat = require('../utils/dateUtil');
 /* 
     schema for our reactions
 */
-const reactions = new Schema(
+const Reactions = new Schema(
   {
     // assigns unique id to reactions
     reactionId: {
@@ -40,4 +40,4 @@ const reactions = new Schema(
   }
 );
 
-module.exports = reactions;
+module.exports = Reactions;
