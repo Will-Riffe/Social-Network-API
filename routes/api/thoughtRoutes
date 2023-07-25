@@ -1,7 +1,7 @@
-// Import the necessary modules
+// import express modules
 const router = require('express').Router();
 
-// Import the route action functions from the thoughtController
+// import the route action functions from the thoughtController
 const {
   getAllThoughts,
   getSingleThought,
@@ -10,21 +10,21 @@ const {
   deleteThought,
   addReaction,
   deleteReaction,
-} = require('../../controller/thoughtController');
+} = require('../../controllers/thoughtController');
 
-// Define routes and their associated action functions using the router object
+// define routes, associated action functions using the router object
 
-// Route for getting all thoughts and creating a new thought
+// Route getting all thoughts; creating a new thought
 router.route('/').get(getAllThoughts).post(createThought);
 
-// Route for getting a single thought, updating a thought, and deleting a thought
+// route getting single thought, update thought, and delete thought
 router
   .route('/:thoughtId')
   .get(getSingleThought) // Get a single thought by its ID
   .put(updateThought) // Update a thought by its ID
   .delete(deleteThought); // Delete a thought by its ID
 
-// Route for adding and deleting reactions on a thought
+// route adding and deleting reactions on a thought
 router
   .route('/:thoughtId/reactions')
   .post(addReaction) // Add a reaction to a thought by its ID
