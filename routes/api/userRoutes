@@ -14,7 +14,7 @@ const {
 
 // define routes, associated action functions using the router object
 
-// route getting all users; creating a new thought
+// route getting all users; creating a new user
 router.route('/').get(getAllUsers).post(createUser);
 
 

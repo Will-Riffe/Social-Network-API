@@ -28,7 +28,10 @@ router
 router
   .route('/:thoughtId/reactions')
   .post(addReaction) // Add a reaction to a thought by its ID
-  .delete(deleteReaction); // Delete a reaction from a thought by its ID
 
-// Export the router to be used in other files
+router
+  .route('/:thoughtId/reactions/:reactionId')
+    .delete(deleteReaction); // Delete a reaction from a thought by its ID
+
+    // Export the router to be used in other files
 module.exports = router;

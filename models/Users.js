@@ -53,7 +53,7 @@ const users = new Schema(
 
 
 // includes virtual properties to get length of the 'friends' property
-userSchema.virtual('friendCount').get(function () {
+users.virtual('friendCount').get(function () {
     return this.friends.length;
 });
 
